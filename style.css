@@ -1,0 +1,909 @@
+.section1{
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.bgimg {
+    width: 100%;
+    height: 700px;
+    background-image: url(images/Untitled\ design\ \(23\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg1{
+    width: 100%;
+    height: 700px;
+    background-image:linear-gradient(rgba(16, 16, 18, 0.8),rgba(14, 14, 16, 0.8),rgba(0, 0, 1, 0.8),rgba(17, 19, 23, 0.8)), url(images/Untitled\ design\ \(56\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg2{
+    width: 100%;
+    height: 700px;
+    background-image:linear-gradient(rgba(16, 16, 18, 0.8),rgba(14, 14, 16, 0.8),rgba(0, 0, 1, 0.8),rgba(17, 19, 23, 0.8)), url(images/banner\ gym.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    width: 100%;
+  
+    background-color: black;
+}
+.headerflex{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logogym{
+width: 33%;
+}
+.logogym img{
+    width: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.navbar{
+    width: 33%;
+}
+.navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+.navbar a:hover{
+    color: red;
+}
+.buttongym{
+    width: 33%;
+}
+.buttongym button{
+    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 20px;
+    /* color: white; */
+    border-radius: 10px;
+    border: 1px solid rgb(183, 88, 66);
+    /* background-color: rgb(66, 183, 66); */
+
+}
+.buttongym button:hover{
+    background-color: red ;
+    color: white;
+    border: 1px solid white;
+}
+
+.gymtextcenter1{
+    text-align: center;
+}
+/* ab css banner k opr vali krny lgy ha */
+.fitnesswondercenter{
+
+   height: 100%;
+    display: flex;
+   justify-content: start;
+    align-items: center;
+    color: white;
+    /* background-color: blue; */
+}
+.fitnesswonder{
+width: 50%;
+/* background-color: blueviolet; */
+margin-left: 70px;
+}
+.fitnesswonder h2{
+font-size: 100px;
+font-family: sans-serif;
+}
+.fitnesswonder p{
+font-size: 25px;
+}
+.fitnesswonder button{
+    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 20px;
+    /* color: white; */
+    border-radius: 10px;
+    border: 1px solid rgb(183, 88, 66);
+    /* background-color: rgb(66, 183, 66); */
+    margin-top: 20px;
+}
+.fitnesswonder button:hover{
+    background-color: rgb(66, 183, 66) ;
+    border: 1px solid white;
+}
+/* #################################.....section2.....############################ */
+.section2width{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.section2center{
+    width: 60%;
+   margin: -80px;
+}
+.section2flex{
+    display: flex;
+    /* justify-content: space-between; */
+    /* text-align: right; */
+    color: white;
+}
+/* .............................................two boxes red blue///////////////////////////////// */
+
+.bodybuilding{
+width: 50%;
+text-align: right;
+background-color: red;
+}
+.musclebuilding{
+    width: 50%;
+    text-align: left;
+   background-color: black;
+}
+.bodybuildingcontent{
+padding: 60px 40px;
+}
+.musclebuildingcontent{
+    padding: 60px 40px;
+}
+.section2flex h2{
+font-size: 40px;
+}
+.section2flex p{
+    font-size: 20px;
+    padding-top: 15px;
+}
+.bodybuildingcontent button{
+    padding: 10px 40px;
+    /* font-weight: 600; */
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    background-color: red;
+    margin-top: 30px;
+}
+.musclebuildingcontent button{
+    padding: 10px 40px;
+    /* font-weight: 600; */
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+    margin-top: 30px;
+}
+
+/* ...........................................................section 3................................ */
+.section3{
+    width: 100%;
+padding-top: 180px;
+    display: flex;
+    justify-content: center;
+
+}
+.section3center{
+    width: 60%;
+
+}
+.ssection3flex{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+.section3cardimg{
+width: 50%;
+text-align: center;
+}
+/* right side box setting */
+.imgicon{
+    width: 100px;
+}
+
+.section3cardcontent{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience{
+    /* padding-top: 40px; */
+    padding-bottom: 40px;
+}
+.experience h2{
+    font-size: 45px;
+    font-weight: 800;
+
+}
+.experience p{
+font-size: 20px;
+padding-top: 10px;
+}
+/* now again display flex experiencesection3 */
+.experiencesection3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.experiencesection3 h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+.experiencesection3 p{
+    font-size: 20px;
+    padding-top: 10px;
+    color: gray;
+}
+.certifiedgymcenter button{
+    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    margin-top: 20px;
+}
+/* .certifiedgymcenter{
+    width: 50%;
+}
+
+.awardwining{
+    width: 50%;
+    margin-right: 20px;
+} */
+
+.certifiedgymcenter button:hover{
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+}
+/* ......................................section4............................ */
+.section4{
+    width: 100%;
+
+}
+.section4flex{
+    display: flex;
+  
+}
+.progression{
+width: 33%;
+background-color: black;
+color: white;
+}
+
+/*  */
+.workout{
+    width: 33%;
+    background-color: red;
+    color: white;
+}
+.nutrition{
+    width: 34%;
+    background-color: black;
+    color: white;
+}
+/* workoutflex */
+.workoutflex{
+    display: flex;
+    padding: 60px 40px;
+}
+.workouticon{
+width: 20%;
+}
+.workoutcontent{
+    width: 80%;
+}
+.workoutcontent h2{
+    font-size: 30px;
+}
+.workoutcontent p{
+    font-size: 20px;
+    padding-top: 15px;
+}
+/* ....................................section5................................ */
+.section5{
+    width: 100%;
+}
+.section5banner img{
+    width: 100%;
+    object-fit: cover;
+}
+/* section6 */
+.section6{
+    width: 100%;
+    /* background-color: aquamarine; */
+   
+}
+.section6content{
+    width: 70%;
+/* background-color: rgb(242, 242, 249); */
+margin-top:70px;
+
+}
+.contentboxes1{
+width: 50%;
+}
+.contentboxes2{
+width: 50%;
+}
+.secondboxcenter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.headingh3h2{
+    margin-top:100px;
+    
+}
+
+ .customstyleh3{
+    text-align: center;
+    color: rgb(251, 19, 19);
+    font-weight: 600;
+   font-size: 30px;
+ }
+ .customstyleh2{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 70px;
+    font-weight: 600;
+ }
+/* .....................................section6 display flex do box */
+
+.displayflex{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 50px;
+}
+/* box k andr again display flex kiya ha */
+.againtwoboxfleex{
+    display: flex;
+}
+.imagegym{
+    position: relative;
+}
+ /* .img1relative{
+    position: relative;
+ } */
+.imgabsolute{
+    position: absolute;
+    width: 80px;
+    left: 70%;
+    top: -18%;
+}
+/* content */
+.imggymcontent h2{
+font-size: 25px;
+text-align: left
+}
+.imggymcontent p{
+    font-size: 20px;
+    color: gray;
+    padding-top: 10px;
+}
+.padingimgcontent{
+padding: 0px 30px;
+}
+/* ..............................................................section 7................................ */
+.section7{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+}
+.newdivbeforeflex{
+    width: 100%;
+    margin-top: 30px;
+}
+.section7center{
+    width: 80%;
+    /* background-color: aquamarine; */
+    text-align: center;
+}
+.section7flex{
+    
+    display: flex;
+    gap: 10px;
+}
+.imgdiv1{
+    width: 25%;
+    overflow: hidden;
+}
+.trainerpic{
+    background-color: black;
+    overflow: hidden;
+
+}
+ .trainerpic img{
+object-fit: cover;
+width: 100%;
+transition: 1s;
+overflow: hidden;
+
+ }
+ .trainerpic img:hover{
+ transform: scale(1.3);
+ transition-duration: 1s;
+ 
+}
+ .trainerpic h2{
+    color: red;
+    font-size: 25px;
+    padding-top: 20px;
+ }
+ .trainerpic p{
+    color: white;
+    padding: 20px 0px;
+    font-size: 20px;
+ }
+ /* .......................................section 8........................ */
+ .section8{
+    width: 100%;
+ }
+ .displayflexboxcenter{
+    display: flex;
+    justify-content: center;
+ }
+ .sectionn8center{
+    width: 65%;
+    /* background-color: aqua; */
+    
+ }
+ .twoblogarticlesection{
+    width: 100%;
+    background-color: white;
+    padding-top: 30px;
+ }
+ .Dflexboxes{
+    display: flex;
+    gap: 15px;
+   
+ }
+ .blog1{
+    width: 50%;
+ }
+ .blog2{
+    width: 50%;
+ }
+ .blogcontent1 img{
+    width: 100%;
+    object-fit: cover;
+ }
+  .blogcontent1 .trickyparagraph{
+    padding-top: 20px;
+    color: gray;
+    font-size: 20px;
+  }
+  .btnreadmore{
+    padding: 8px 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: red;
+    border: 2px solid red;
+    background-color: white;
+    margin-top: 30px;
+
+  }
+  .btnreadmore2{
+    padding: 8px 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    border: 2px solid red;
+    background-color: red;
+    margin-top: 30px;
+
+  }
+ /*  nichy two section aty ha  */
+ .circle2flex{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    
+ }
+
+
+ .smallwidth{
+    width: 15%;
+   
+ }
+ .headingwidth{
+ width: 85%;
+ }
+ .headingwidth p{
+    color: gray;
+ }
+ .circulered{
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 16px 25px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+ }
+
+ /* end section */
+ /* now start */
+ /* ...........................................footer */
+ .footer{
+    width: 100%;
+ }
+ .bgfooter{
+    width: 100%;
+    background-image:linear-gradient(rgba(16, 16, 18, 0.8),rgba(14, 14, 16, 0.8),rgba(0, 0, 1, 0.8),rgba(17, 19, 23, 0.8)), url(images/banner\ gym.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ }
+ .dflexfooter{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+ }
+ .footerpadding{
+    padding: 80px 40px;
+ }
+ .customheading{
+    font-size: 30px;
+    color: red;
+    font-weight: 600;
+    padding-bottom: 20px;
+ }
+ .footerbox1{width: 25%;}
+ .footerbox2{width: 25%;}
+ .footerbox4{
+    width: 25%;
+ }
+ .footerbox1 p{
+    font-size: 20px;
+    padding-top: 10px;
+    
+ }
+ /* box2 */
+ .footerbox2 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding-top: 10px;
+ }
+ /* 4box */
+ .footerbox4 .h2heading{
+    padding-top: 20px;
+ }
+ .footerbox4 p{
+    font-size: 20px;
+    padding-top: 10px;
+ }
+ .iconsfa .fa {
+    padding: 4px 8px ;
+    font-size: 30px;
+    background-color: white;
+    color: red;
+    border: 1px solid rgb(239, 12, 12);
+    border-radius: 20px;
+   margin-right: 10px;
+}
+/*  */
+.relativefooter{
+    width: 100;
+    padding-top: 100px;
+    /* background-color: rgb(148, 148, 194); */
+    position: relative;
+}
+.absolutefooter{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2%;
+    background-color: rgb(77, 76, 76);
+    text-align: center;
+    left: 12%;
+}
+.lastpara{
+    text-align: center;
+    color: white;
+    padding-top: 90px;
+    font-size: 25px;
+}
+/*  */
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: 35px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.top-to-bottom a {
+    background-color: white;
+    color: red;
+    width: 60px;
+    border-radius: 10%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 19px;
+    border: 1px solid red;
+    margin-bottom: 33px;
+}
+
+/*............................................................... trainers */
+.trainers{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.boxcentertrainers h2{
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+
+}
+/* ..............................................................about us................... */
+.aboutus{
+    width: 100%;
+}
+.paddingtopabout{
+    padding: 80px 120px;
+}
+.aboutusdisplay{
+    display: flex;
+   
+}
+.imgabout{
+width: 40%;
+}
+.imgabout img{
+    /* width: 100%; */
+    object-fit: cover;
+}
+.aboutcontent{
+    width: 60%;
+    /* background-color: aquamarine; */
+}
+.dispaycenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutsection h4{
+color: red;
+}
+.aboutsection h1{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 15px 0px;
+    text-transform: uppercase;
+}
+.aboutsection h3{
+  font-size: 20px;
+  font-weight: 600;
+  color: gray;
+}
+.aboutsection p{
+    font-size: 20px;
+    padding-top: 20px;
+    color: black;
+}
+.backgroundblack{
+    background-color: black;
+    margin-top: 20px;
+    color: white;
+    padding: 20px 30px;
+}
+.backgroundblack p{
+    padding: 10px 0px;
+    color: white;
+}
+.backgroundblack h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: red;
+}
+/* aboutpage sectio2 */
+.aboutcards{
+    width: 100%;
+}
+.cardspaddingall{
+    padding-top: 100px;
+    padding: 0px 40px;
+    margin-bottom: -250px;
+}
+.parentcards{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    flex: 1 1 33%;
+}
+.card1about{
+text-align: center;
+padding: 60px 60px;
+background-color: rgb(249, 249, 249);
+}
+.card1about h2{
+padding: 20px;
+font-size: 25px;
+font-weight: 600;
+text-transform: uppercase;
+}
+.card1about p{
+font-size: 20px;
+}
+.card1about button{
+    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    margin-top: 30px;
+}
+.card1about button:hover{
+background-color: red;
+color: white;
+}
+/* background black */
+.cardlayerkopar{
+    width: 100%;
+    background-color: rgb(37, 36, 36);
+    text-transform: uppercase;
+    color: white;
+}
+.paddingcontentblackbackground{
+    padding: 200px 0px;
+    text-align: center;
+}
+.contentblackbackground h2{
+font-size: 50px;
+}
+.contentblackbackground button{
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: 25px;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    margin-top: 30px;
+    text-transform: uppercase;   
+    transition: 1s;
+}
+.contentblackbackground button:hover{
+    background-color: white;
+    color: red;
+    transition: 1s;
+}
+
+.Discount{
+    margin-top: 100px;
+}
+/* ..............................................................contactus page................ */
+.contactus{
+    width: 100%;
+}
+.contactpaddingall{
+    padding: 0px 40px;
+    padding-top: 100px;
+
+}
+.parentcontact{
+    display: flex;
+    gap: 30px;
+    /* flex-wrap: nowrap; */
+    /* flex: 1 1 33%; */
+}
+.contact1about{
+    width: 33%;
+    text-align: center;
+padding: 60px 60px;
+background-color: black;
+}
+.contact1about h2{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: red;
+    }
+    .contact1about p{
+    font-size: 20px;
+    color: white;
+    }
+   .contact1about .fa{
+    font-size: 30px;
+    color: white;
+    padding: 4px 8px;
+    font-size: 30px;
+    background-color: white;
+    color: red;
+    border: 1px solid rgb(239, 12, 12);
+    border-radius: 20px;
+    margin-right: 10px;
+   }
+   .headingcontact{
+    text-align: center;
+   }
+   .headingcontact h3{
+    color: red;
+    font-size: 25px;
+   }
+   .headingcontact h2{
+font-size: 80px;
+padding: 20px 0px;
+   }
+/* .............................................................................. */
+.contactform{
+    width: 100%;
+    padding-top: 70px;
+}
+.d-flex{
+    display: flex;
+}
+.formcontact{
+width: 50%;
+background-color: black;
+}
+.formcontact input{
+    padding: 15px 101px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: 1px  solid red;
+}
+.map{
+    width: 50%;
+}
+.padingcontactform{
+    padding: 0px 40px;   
+}
+.inputtext{
+    padding: 20px 20px;
+    padding-left: 40px;
+}
+.paddingLeft input{
+    padding: 15px 303px;
+    border-radius: 7px;
+    border: 1px  solid red;
+}
+.paddingLeft textarea {
+    border-radius: 7px;
+    text-align: center;
+    border: 1px  solid red;
+}
+.paddingLeft button{
+    padding: 12px 333px;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 7px;
+    font-weight: 600;
+    background-color: red;
+    color: white;
+}
+.paddingLeft button:hover{
+    background-color: brown;
+}
