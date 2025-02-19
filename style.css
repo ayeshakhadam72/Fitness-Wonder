@@ -1,11 +1,13 @@
-.section1{
+
+.section1 {
     width: 100%;
 }
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+body {
     font-family: sans-serif;
 }
 .bgimg {
@@ -15,237 +17,363 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.bgimg1{
+
+/* HEADER */
+.header {
     width: 100%;
-    height: 700px;
-    background-image:linear-gradient(rgba(16, 16, 18, 0.8),rgba(14, 14, 16, 0.8),rgba(0, 0, 1, 0.8),rgba(17, 19, 23, 0.8)), url(images/Untitled\ design\ \(56\).png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.bgimg2{
-    width: 100%;
-    height: 700px;
-    background-image:linear-gradient(rgba(16, 16, 18, 0.8),rgba(14, 14, 16, 0.8),rgba(0, 0, 1, 0.8),rgba(17, 19, 23, 0.8)), url(images/banner\ gym.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.header{
-    width: 100%;
-  
     background-color: black;
+    padding: 0px 20px;
 }
-.headerflex{
-display: flex;
-justify-content: space-between;
-align-items: center;
+.headerflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Makes navbar stack when screen is small */
 }
-.logogym{
-width: 33%;
+
+/* LOGO */
+.logogym {
+    width: 150px;
 }
-.logogym img{
-    width: 130px;
+.logogym img {
+    width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
-.navbar{
-    width: 33%;
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
-.navbar a{
+.navbar a {
     text-decoration: none;
     text-transform: uppercase;
-    margin-right: 15px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
+    margin-right: 20px;
 }
-.navbar a:hover{
+.navbar a:hover {
     color: red;
 }
-.buttongym{
-    width: 33%;
+
+/* BUTTON */
+.buttongym {
+    display: flex;
+    justify-content: flex-end;
 }
-.buttongym button{
-    padding: 10px 40px;
+.buttongym button {
+    padding: 10px 20px;
     font-weight: 600;
-    font-size: 20px;
-    /* color: white; */
+    font-size: 18px;
     border-radius: 10px;
     border: 1px solid rgb(183, 88, 66);
-    /* background-color: rgb(66, 183, 66); */
-
+    background-color: transparent;
+    cursor: pointer;
+    background-color: red;
+    color: white;
 }
-.buttongym button:hover{
-    background-color: red ;
+.buttongym button:hover {
+    background-color: rgb(225, 11, 11);
     color: white;
     border: 1px solid white;
 }
 
-.gymtextcenter1{
-    text-align: center;
-}
-/* ab css banner k opr vali krny lgy ha */
-.fitnesswondercenter{
-
-   height: 100%;
+/* FITNESS WONDER SECTION */
+.fitnesswondercenter {
+    height: 100%;
     display: flex;
-   justify-content: start;
+    justify-content: center;
     align-items: center;
     color: white;
-    /* background-color: blue; */
+    text-align: center;
+    padding: 20px;
 }
-.fitnesswonder{
-width: 50%;
-/* background-color: blueviolet; */
-margin-left: 70px;
+.fitnesswonder {
+    max-width: 800px;
+    padding: 20px;
 }
-.fitnesswonder h2{
-font-size: 100px;
-font-family: sans-serif;
+.fitnesswonder h2 {
+    font-size: 80px;
+    font-family: sans-serif;
 }
-.fitnesswonder p{
-font-size: 25px;
-}
-.fitnesswonder button{
-    padding: 10px 40px;
-    font-weight: 600;
+.fitnesswonder p {
     font-size: 20px;
-    /* color: white; */
+}
+.fitnesswonder button {
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 18px;
     border-radius: 10px;
     border: 1px solid rgb(183, 88, 66);
-    /* background-color: rgb(66, 183, 66); */
     margin-top: 20px;
 }
-.fitnesswonder button:hover{
-    background-color: rgb(66, 183, 66) ;
+.fitnesswonder button:hover {
+    background-color: rgb(66, 183, 66);
     border: 1px solid white;
 }
-/* #################################.....section2.....############################ */
-.section2width{
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .headerflex {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .navbar {
+        gap: 10px;
+    }
+    .fitnesswonder h2 {
+        font-size: 60px;
+    }
+    .fitnesswonder p {
+        font-size: 18px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .headerflex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .buttongym {
+        justify-content: center;
+    }
+    .fitnesswonder {
+        width: 90%;
+        text-align: center;
+    }
+    .fitnesswonder h2 {
+        font-size: 50px;
+    }
+    .fitnesswonder p {
+        font-size: 16px;
+    }
+    .fitnesswonder button {
+        padding: 8px 25px;
+        font-size: 16px;
+    }
+}
+
+/* Smallest Screens */
+@media (max-width: 480px) {
+    .fitnesswonder h2 {
+        font-size: 40px;
+    }
+    .fitnesswonder p {
+        font-size: 14px;
+    }
+    .fitnesswonder button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+/* ############################ Section 2 ############################ */
+.section2width {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
-.section2center{
+.section2center {
     width: 60%;
-   margin: -80px;
+    margin: -80px;
 }
-.section2flex{
+.section2flex {
     display: flex;
-    /* justify-content: space-between; */
-    /* text-align: right; */
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
     color: white;
 }
-/* .............................................two boxes red blue///////////////////////////////// */
 
-.bodybuilding{
-width: 50%;
-text-align: right;
-background-color: red;
-}
-.musclebuilding{
+/* Two Boxes: Red & Black */
+.bodybuilding, .musclebuilding {
     width: 50%;
-    text-align: left;
-   background-color: black;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-.bodybuildingcontent{
-padding: 60px 40px;
+.bodybuilding {
+    background-color: red;
 }
-.musclebuildingcontent{
-    padding: 60px 40px;
+.musclebuilding {
+    background-color: black;
 }
-.section2flex h2{
-font-size: 40px;
+
+/* Content Styling */
+.bodybuildingcontent, .musclebuildingcontent {
+    padding: 60px 30px;
 }
-.section2flex p{
+.section2flex h2 {
+    font-size: 40px;
+}
+.section2flex p {
     font-size: 20px;
     padding-top: 15px;
 }
-.bodybuildingcontent button{
+
+/* Buttons */
+.bodybuildingcontent button, .musclebuildingcontent button {
     padding: 10px 40px;
-    /* font-weight: 600; */
     font-size: 20px;
     color: white;
     border: 1px solid white;
-    background-color: red;
     margin-top: 30px;
+    cursor: pointer;
 }
-.musclebuildingcontent button{
-    padding: 10px 40px;
-    /* font-weight: 600; */
-    font-size: 20px;
-    color: white;
-    border: 1px solid white;
+.bodybuildingcontent button {
+    background-color: red;
+}
+.musclebuildingcontent button {
     background-color: black;
-    margin-top: 30px;
 }
 
-/* ...........................................................section 3................................ */
-.section3{
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .section2center {
+        width: 80%;
+        margin: -50px;
+    }
+    .section2flex {
+        flex-wrap: wrap;
+    }
+    .bodybuilding, .musclebuilding {
+        width: 100%; /* Stack boxes on smaller screens */
+        text-align: center;
+    }
+    .section2flex h2 {
+        font-size: 35px;
+    }
+    .section2flex p {
+        font-size: 18px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .section2center {
+        width: 90%;
+        margin: -30px;
+    }
+    .bodybuilding, .musclebuilding {
+        padding: 30px;
+    }
+    .section2flex h2 {
+        font-size: 28px;
+    }
+    .section2flex p {
+        font-size: 16px;
+    }
+    .bodybuildingcontent button, .musclebuildingcontent button {
+        padding: 8px 30px;
+        font-size: 18px;
+    }
+}
+
+/* Smallest Screens */
+@media (max-width: 480px) {
+    .section2center {
+        width: 100%;
+        margin: -20px;
+    }
+    .section2flex h2 {
+        font-size: 24px;
+    }
+    .section2flex p {
+        font-size: 14px;
+    }
+    .bodybuildingcontent button, .musclebuildingcontent button {
+        padding: 8px 25px;
+        font-size: 16px;
+    }
+}
+
+/* ############################ Section 3 ############################ */
+.section3 {
     width: 100%;
-padding-top: 180px;
+    padding-top: 180px;
     display: flex;
     justify-content: center;
-
 }
-.section3center{
+.section3center {
     width: 60%;
-
 }
-.ssection3flex{
+.ssection3flex {
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
-
-}
-.section3cardimg{
-width: 50%;
-text-align: center;
-}
-/* right side box setting */
-.imgicon{
-    width: 100px;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+    align-items: center;
 }
 
-.section3cardcontent{
+/* Image Section */
+.section3cardimg {
+    width: 50%;
+    text-align: center;
+}
+.section3cardimg img {
+    width: 100%;
+    max-width: 450px; /* Prevents oversized images */
+}
+
+/* Content Section */
+.section3cardcontent {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.experience{
-    /* padding-top: 40px; */
+.experience {
     padding-bottom: 40px;
 }
-.experience h2{
+.experience h2 {
     font-size: 45px;
     font-weight: 800;
+}
+.experience p {
+    font-size: 20px;
+    padding-top: 10px;
+}
 
-}
-.experience p{
-font-size: 20px;
-padding-top: 10px;
-}
-/* now again display flex experiencesection3 */
-.experiencesection3{
+/* Sub-sections */
+.experiencesection3 {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 20px; /* Adds spacing */
 }
-.experiencesection3 h2{
+.experiencesection3 h2 {
     font-size: 25px;
     font-weight: 700;
 }
-.experiencesection3 p{
+.experiencesection3 p {
     font-size: 20px;
     padding-top: 10px;
     color: gray;
 }
-.certifiedgymcenter button{
+.certifiedgymcenter button {
     padding: 10px 40px;
     font-weight: 600;
     font-size: 20px;
@@ -253,21 +381,82 @@ padding-top: 10px;
     color: red;
     border: 1px solid red;
     margin-top: 20px;
+    cursor: pointer;
 }
-/* .certifiedgymcenter{
-    width: 50%;
-}
-
-.awardwining{
-    width: 50%;
-    margin-right: 20px;
-} */
-
-.certifiedgymcenter button:hover{
+.certifiedgymcenter button:hover {
     background-color: red;
     color: white;
     border: 1px solid white;
 }
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .section3center {
+        width: 80%;
+    }
+    .ssection3flex {
+        flex-wrap: wrap;
+    }
+    .section3cardimg, .section3cardcontent {
+        width: 100%; /* Stack image and content */
+        text-align: center;
+    }
+    .section3cardcontent {
+        padding: 30px;
+    }
+    .experience h2 {
+        font-size: 35px;
+    }
+    .experience p, .experiencesection3 p {
+        font-size: 18px;
+    }
+    .experiencesection3 {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+        text-align: center;
+    }
+    .certifiedgymcenter, .awardwining {
+        width: 100%;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+    .section3center {
+        width: 90%;
+    }
+    .experience h2 {
+        font-size: 30px;
+    }
+    .experience p, .experiencesection3 p {
+        font-size: 16px;
+    }
+    .certifiedgymcenter button {
+        padding: 8px 30px;
+        font-size: 18px;
+    }
+}
+
+/* Smallest Screens */
+@media (max-width: 480px) {
+    .section3center {
+        width: 100%;
+    }
+    .experience h2 {
+        font-size: 26px;
+    }
+    .experience p, .experiencesection3 p {
+        font-size: 14px;
+    }
+    .certifiedgymcenter button {
+        padding: 8px 25px;
+        font-size: 16px;
+    }
+}
+
+
 /* ......................................section4............................ */
 .section4{
     width: 100%;
@@ -275,11 +464,14 @@ padding-top: 10px;
 }
 .section4flex{
     display: flex;
-  
-}
+     
+}  
+
+
+
 .progression{
 width: 33%;
-background-color: black;
+background-color: rgb(66, 63, 63);
 color: white;
 }
 
@@ -291,7 +483,7 @@ color: white;
 }
 .nutrition{
     width: 34%;
-    background-color: black;
+    background-color: rgb(65, 58, 58);
     color: white;
 }
 /* workoutflex */
